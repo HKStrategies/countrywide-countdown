@@ -40,12 +40,15 @@
   "foundation/components/visibility";
 
 // BASE
+
 @import "base/base-style";
 @import "base/utility-classes";
 @import "base/normalize";
 @import "base/titles";
 @import "base/mixin";
 @import "base/fonts";
+@import "base/clock-animation";
+
 
 // LAYOUT
 @import "modules/top-nav-bar";

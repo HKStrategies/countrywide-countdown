@@ -1,0 +1,26 @@
+/* The clock animation code */
+@keyframes rotate-background {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counter-rotate-background {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.clock__rotate {
+    animation:rotate-background 27s linear infinite;
+}
+
+.clock__counter-rotate {
+    animation:counter-rotate-background 27s linear infinite;
+}

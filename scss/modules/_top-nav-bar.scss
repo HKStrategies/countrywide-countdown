@@ -25,27 +25,3 @@ header {
         }
     }
 }
-
-@media #{$medium} {
-    .header__welcome-user,
-    .header__links {
-        @include grid-column(2);
-    }
-    .header__title {
-        @include grid-column(8);
-    }
-}
-
-.countdown-page {
-    .header__welcome-user,
-    .header__links {
-        @include visuallyhidden();
-    }
-
-    .header__title {
-        @include grid-column(
-        $columns: 8,
-        $center: true
-        );
-    }
-}

@@ -1,13 +1,10 @@
 // Titles
-
 .header__title {
-    font-size: rem-calc(10);
-    font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
-    letter-spacing: rem-calc(2);
-    margin: 0;
 
-    &.header__title-dashed {
+    .header__title-dashed {
         font-size: rem-calc(10);
+        font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+        letter-spacing: rem-calc(2);
         text-align: center;
         margin: 0;
 
@@ -15,9 +12,46 @@
         &:after {
             content: " ";
             border-top: rem-calc(1) solid #ffffff;
-            width: rem-calc(140);
+            width: rem-calc(60);
             display: inline-block;
             margin: rem-calc(3 10);
+        }
+    }
+
+    .countdown-page & {
+        @include grid-column(
+        $columns: 12,
+        $center: true
+        );
+    }
+}
+
+
+@media #{$medium} {
+    .header__title {
+
+        .header__title-dashed {
+            font-size: rem-calc(10);
+            font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+            letter-spacing: rem-calc(2);
+            text-align: center;
+            margin: 0;
+
+            &:before,
+            &:after {
+                content: " ";
+                border-top: rem-calc(1) solid #ffffff;
+                width: rem-calc(140);
+                display: inline-block;
+                margin: rem-calc(3 10);
+            }
+        }
+
+        .countdown-page & {
+            @include grid-column(
+            $columns: 8,
+            $center: true
+            );
         }
     }
 }
