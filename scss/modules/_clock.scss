@@ -3,9 +3,16 @@
 .clock__container {
     width: rem-calc(700);
     height: rem-calc(730);
+    background: url(../images/background-01.png) center 92px no-repeat;
+    background-size: 660px;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+
+    .svg & {
+        background: url(../images/background-01.svg) center 92px no-repeat;
+        background-size: 460px;
+    }
 }
 
 .clock__circle-1 {
@@ -31,8 +38,8 @@
     height: rem-calc(580);
     border-radius: 50%;
     position: absolute;
-    top: 60px;
-    left: 60px;
+    top: rem-calc(60);
+    left: rem-calc(60);
     z-index: 10;
 
     /* can be treated like a fallback */
@@ -51,8 +58,8 @@
     height: rem-calc(500);
     border-radius: 50%;
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: rem-calc(40);
+    left: rem-calc(40);
     z-index: 20;
 
     /* can be treated like a fallback */
@@ -66,6 +73,19 @@
     background: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */
 }
 
+.clock__circle-dial {
+    width: rem-calc(420);
+    height: rem-calc(420);
+    border-radius: 50%;
+    position: absolute;
+    top: rem-calc(149);
+    left: rem-calc(140);
+    z-index: 30;
+    background: url(../images/moveing-dial.svg) center 0 no-repeat;
+    background-size: rem-calc(385);
+    background-position: center rem-calc(17);
+}
+
 
 /* The animation code */
 @keyframes rotate-background {
@@ -77,8 +97,21 @@
     }
 }
 
+@keyframes counter-rotate-background {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
 .clock__rotate {
     animation:rotate-background 27s linear infinite;
+}
+
+.clock__counter-rotate {
+    animation:counter-rotate-background 27s linear infinite;
 }
 
 // Date and time
@@ -92,7 +125,6 @@
 
     span {
         text-align: center;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         line-height: normal;
 
         span {
@@ -116,13 +148,13 @@
         color: #E70087;
 
         &.prism_top {
-            font-family: 'detroit_08_prism_topregular';
+            font-family: "detroit_08_prism_topregular",Helvetica,Arial,sans-serif;
             position: absolute;
             top: 0;
         }
 
         &.prism_right {
-            font-family: 'detroit_07_prism_rightregular';
+            font-family: "detroit_07_prism_rightregular",Helvetica,Arial,sans-serif;
             color: #923180;
             position: absolute;
             top: 0;
@@ -134,6 +166,8 @@
 
         span {
             font-size: rem-calc(38);
+            font-family: 'Gotham-Book',Helvetica,Arial,sans-serif;
+            font-weight: lighter;
             display: block;
             font-weight: lighter;
         }
@@ -143,10 +177,13 @@
     .minutes,
     .seconds {
         display: inline-block;
+        font-family: 'Gotham-Bold';
         font-size: rem-calc(22);
 
         span {
             font-size: rem-calc(10);
+            font-family: 'Gotham-Book';
+            font-weight: lighter;
             width: rem-calc(80);
             display: block;
         }
