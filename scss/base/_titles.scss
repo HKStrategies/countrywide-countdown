@@ -1,11 +1,15 @@
 // Titles
 .header__title {
+    font-size: rem-calc(10);
+    font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+    text-align: center;
+    letter-spacing: rem-calc(2);
 
     .header__title-dashed {
-        font-size: rem-calc(10);
-        font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
-        letter-spacing: rem-calc(2);
-        text-align: center;
+        font-size: inherit;
+        font-family: inherit;
+        letter-spacing: inherit;
+        text-align: inherit;
         margin: 0;
 
         &:before,

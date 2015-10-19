@@ -214,7 +214,8 @@
         font-size: rem-calc(52);
         line-height: normal;
         margin-bottom: rem-calc(100);
-        margin-left: rem-calc(56);
+        margin-left: rem-calc(40);
+        width: rem-calc(80);
         font-weight: normal;
         color: #E70087;
 
@@ -246,10 +247,11 @@
             font-size: rem-calc(172);
             line-height: normal;
             margin-bottom: rem-calc(100);
-            margin-left: rem-calc(40);
+            margin-left: 0;
+            width: rem-calc(230);
             font-weight: normal;
             color: #E70087;
-            
+
             span {
                 font-size: rem-calc(38);
                 font-family: 'Gotham-Book',Helvetica,Arial,sans-serif;
