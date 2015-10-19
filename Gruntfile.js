@@ -17,6 +17,18 @@ module.exports = function(grunt) {
       }
     },
 
+    svg2png: {
+        all: {
+            // specify files in array format with multiple src-dest mapping
+            files: [
+                // rasterize all SVG files in "img" and its subdirectories to "img/png"
+                { src: ['images/**/*.svg'], dest: 'images/png/' },
+                // rasterize SVG file to same directory
+                // { src: ['images/logo.svg'] }
+            ]
+        }
+    },
+
     watch: {
       grunt: {
         options: {
@@ -33,8 +45,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-svg2png');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
+  grunt.registerTask('image', ['svg2png']);
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['build','watch']);
 }

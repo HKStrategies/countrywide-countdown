@@ -1,0 +1,51 @@
+// Header
+header {
+    margin-top: rem-calc(30);
+    font-size: rem-calc(10);
+    letter-spacing: rem-calc(2);
+}
+
+.header__links {
+    ul {
+        font-size: rem-calc(10);
+        margin: 0;
+        line-height: normal;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: rem-calc(10);
+    }
+
+    a {
+        color: #ffffff;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media #{$medium} {
+    .header__welcome-user,
+    .header__links {
+        @include grid-column(2);
+    }
+    .header__title {
+        @include grid-column(8);
+    }
+}
+
+.countdown-page {
+    .header__welcome-user,
+    .header__links {
+        @include visuallyhidden();
+    }
+
+    .header__title {
+        @include grid-column(
+        $columns: 8,
+        $center: true
+        );
+    }
+}

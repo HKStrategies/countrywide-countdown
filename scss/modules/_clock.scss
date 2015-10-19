@@ -1,0 +1,173 @@
+// Clock circle
+
+.clock__container {
+    width: rem-calc(700);
+    height: rem-calc(730);
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clock__circle-1 {
+    width: rem-calc(700);
+    height: rem-calc(700);
+    border-radius: 50%;
+    margin: 10px auto;
+    position: relative;
+
+    /* can be treated like a fallback */
+    background-color: #006e85;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(to right, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #006e85;
+    background: linear-gradient(to right, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
+}
+
+.clock__circle-2 {
+    width: rem-calc(580);
+    height: rem-calc(580);
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 10;
+
+    /* can be treated like a fallback */
+    background-color: #007f99;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(to top, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #007f99;
+    background: linear-gradient(to top, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
+}
+
+.clock__circle-3 {
+    width: rem-calc(500);
+    height: rem-calc(500);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 20;
+
+    /* can be treated like a fallback */
+    background-color: #009ebc;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */;
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #009ebc;
+    background: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */
+}
+
+
+/* The animation code */
+@keyframes rotate-background {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.clock__rotate {
+    animation:rotate-background 27s linear infinite;
+}
+
+// Date and time
+
+.clock__date-container {
+    z-index: 30;
+    position: absolute;
+    top: rem-calc(190);
+    left: rem-calc(230);
+    width: rem-calc(250);
+
+    span {
+        text-align: center;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        line-height: normal;
+
+        span {
+            color: #009ebc;
+        }
+    }
+
+    .clock__day {
+        position: relative;
+        width: rem-calc(250);
+        height: rem-calc(250);
+    }
+
+    .days {
+        display: block;
+        font-size: rem-calc(172);
+        line-height: normal;
+        margin-bottom: rem-calc(100);
+        margin-left: rem-calc(40);
+        font-weight: normal;
+        color: #E70087;
+
+        &.prism_top {
+            font-family: 'detroit_08_prism_topregular';
+            position: absolute;
+            top: 0;
+        }
+
+        &.prism_right {
+            font-family: 'detroit_07_prism_rightregular';
+            color: #923180;
+            position: absolute;
+            top: 0;
+
+            span {
+                display: none;
+            }
+        }
+
+        span {
+            font-size: rem-calc(38);
+            display: block;
+            font-weight: lighter;
+        }
+    }
+
+    .hours,
+    .minutes,
+    .seconds {
+        display: inline-block;
+        font-size: rem-calc(22);
+
+        span {
+            font-size: rem-calc(10);
+            width: rem-calc(80);
+            display: block;
+        }
+    }
+
+    .minutes {
+        position: relative;
+
+        &:before,
+        &:after {
+            border-left: rem-calc(1) solid #009ebc;
+            content: " ";
+            height: rem-calc(20);
+            position: absolute;
+            top: rem-calc(4);
+            left: 0;
+        }
+
+        &:after {
+            left: inherit;
+            right: 0;
+        }
+    }
+}

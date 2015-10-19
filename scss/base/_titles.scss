@@ -1,0 +1,22 @@
+// Titles
+
+.header__title {
+    font-size: rem-calc(10);
+    letter-spacing: rem-calc(2);
+    margin: 0;
+
+    &.header__title-dashed {
+        font-size: rem-calc(10);
+        text-align: center;
+        margin: 0;
+
+        &:before,
+        &:after {
+            content: " ";
+            border-top: rem-calc(1) solid #ffffff;
+            width: rem-calc(140);
+            display: inline-block;
+            margin: rem-calc(3 10);
+        }
+    }
+}
