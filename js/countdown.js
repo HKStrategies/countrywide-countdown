@@ -1,10 +1,4 @@
-// var linkCons = 'http://soumghosh.com/otherProjects/Numbers/'
-
-// var num = []; //this is an empty array to store the image urls
-// var linkCons = "http://soumghosh.com/otherProjects/Numbers/";
-// for(var i = 0; i < 10; i++) {
-//     num.push(linkCons + "nw" + i + ".png");
-// }
+// BISQIT - Andrew Nartey - 20/10/15
 
 //clock starts here
 
@@ -36,7 +30,7 @@ $(function () {
 
         var days = fixIntegers(difference);
 
-        //"Also when the day reaches 00 and their is < 24 hrs to, i would like to add a CSS class to the page somewhere."
+        //"When the day reaches 00 and their is < 24 hrs to go, we add an alert CSS class"
         if (days < 1) {
             $('.days').addClass("opacity_05");
         }
