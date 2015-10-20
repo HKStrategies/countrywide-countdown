@@ -1,13 +1,10 @@
 
 .countdown__copy-container {
     width: 100%;
-    // height: 100%;
     display: block;
     position: relative;
 
-    // background: url(../images/city-background.png) repeat-x;
-    // background-size: rem-calc(700);
-    // background-position: bottom;
+    
 
     &:after {
         content: "";
