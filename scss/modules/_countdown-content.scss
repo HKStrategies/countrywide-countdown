@@ -4,14 +4,15 @@
     display: block;
     position: relative;
 
-    
+
 
     &:after {
         content: "";
         background: url(../images/city-background.png) repeat-x;
         background-size: rem-calc(700);
         background-position: bottom;
-        opacity: 0.5;
+        // opacity: 0.5;
+        opacity: 0;
         top: 0;
         left: 0;
         bottom: 0;
@@ -43,7 +44,7 @@
     );
 
     img {
-        margin: rem-calc(20 0);
+        margin: rem-calc(20 0 48 0);
     }
 
     @media #{$medium} {

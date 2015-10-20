@@ -6,7 +6,7 @@ $(function () {
 
     // var future = new Date("October 19 2015 11:50:00 GMT+0200");
     var url = "http://www.google.com"; // ex: "/index.php" , "../" , "/"
-    var future = new Date("October 28 2015");
+    var future = new Date("October 28 2015 16:00:00 GMT+0100");
 
     var _countdown = function () {
 

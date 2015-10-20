@@ -159,6 +159,21 @@
     background-size: rem-calc(185);
     background-position: center;
 
+    // iphone 4/5
+    @media screen and (min-width: 320px) {
+        left: rem-calc(70);
+    }
+
+    // iphone 6 plus
+    @media screen and (min-width: 414px) {
+        left: rem-calc(92);
+    }
+
+    // iphone landscape
+    @media screen and (min-width: 480px) {
+        left: rem-calc(125);
+    }
+
     @media #{$medium} {
         width: rem-calc(420);
         height: rem-calc(420);
@@ -181,6 +196,14 @@
     top: rem-calc(120);
     left: rem-calc(104);
     width: rem-calc(167);
+
+    @media screen and (min-width: 414px) {
+        left: rem-calc(125);
+    }
+
+    @media screen and (min-width: 480px) {
+        left: rem-calc(158);
+    }
 
     @media #{$medium} {
         top: rem-calc(190);

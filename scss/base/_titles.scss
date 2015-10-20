@@ -24,8 +24,8 @@
 
     .countdown-page & {
         @include grid-column(
-        $columns: 12,
-        $center: true
+            $columns: 12,
+            $center: true
         );
     }
 }
@@ -53,8 +53,8 @@
 
         .countdown-page & {
             @include grid-column(
-            $columns: 8,
-            $center: true
+                $columns: 12,
+                $center: true
             );
         }
     }
