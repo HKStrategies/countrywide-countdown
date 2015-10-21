@@ -275,6 +275,12 @@
             font-weight: normal;
             color: #E70087;
 
+            &.prism_top {
+                span {
+                    margin-left: rem-calc(15);
+                }
+            }
+
             span {
                 font-size: rem-calc(38);
                 font-family: 'Gotham-Book',Helvetica,Arial,sans-serif;
