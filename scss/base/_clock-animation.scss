@@ -8,6 +8,15 @@
     }
 }
 
+    @-webkit-keyframes rotate-background {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
 @keyframes counter-rotate-background {
     from {
         transform: rotate(0deg);
@@ -17,10 +26,21 @@
     }
 }
 
+    @-webkit-keyframes counter-rotate-background {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
 .clock__rotate {
+    -webkit-animation:rotate-background 27s linear infinite;
     animation:rotate-background 27s linear infinite;
 }
 
 .clock__counter-rotate {
+    -webkit-animation:counter-rotate-background 27s linear infinite;
     animation:counter-rotate-background 27s linear infinite;
 }

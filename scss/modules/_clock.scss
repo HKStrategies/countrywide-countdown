@@ -64,6 +64,7 @@
         /* these will reset other properties, like background-position, but it does know what you mean */
         background: #006e85;
         background: linear-gradient(to right, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
+        filter: alpha(opacity=20)\9;
     }
 }
 
@@ -104,6 +105,7 @@
         /* these will reset other properties, like background-position, but it does know what you mean */
         background: #007f99;
         background: linear-gradient(to top, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
+        filter: alpha(opacity=20)\9;
     }
 }
 
@@ -144,6 +146,7 @@
         /* these will reset other properties, like background-position, but it does know what you mean */
         background: #009ebc;
         background: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */
+        filter: alpha(opacity=20)\9;
     }
 }
 
@@ -185,6 +188,11 @@
         background: url(../images/moveing-dial.svg) center 0 no-repeat;
         background-size: rem-calc(385);
         background-position: center rem-calc(17);
+    }
+
+    // IE9 Hack
+    @media screen and (min-width:0\0) {
+        background: none;
     }
 }
 
