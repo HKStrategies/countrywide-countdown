@@ -9,25 +9,64 @@
     <script src="js/countdown.js" type="text/javascript"></script>
   </head>
   <body>
-    <section class="row">
-        <div class="container">
-            <header>
-                <div class="header__welcome-user">
-                    HI USERNAME
-                </div>
-                <div class="header__title">
-                    <h1 class="header__title-dashed">Countrywide presents</h1>
-                </div>
-                <div class="header__links">
-                    <ul>
-                        <li><a href="#" title="">VIDEO</a></li>
-                        <li><a href="#" title="">F.A.Q.'s</a></li>
-                    </ul>
-                </div>
-             </header>
+      <header>
+          <!-- <div class="header__welcome-user">
+              HI USERNAME
+          </div> -->
+          <div class="header__title">
+              <h1 class="header__title-dashed">Countrywide presents</h1>
+          </div>
+          <!-- <div class="header__links">
+              <ul>
+                  <li><a href="#" title="">VIDEO</a></li>
+                  <li><a href="#" title="">F.A.Q.'s</a></li>
+              </ul>
+          </div> -->
+       </header>
+       <section class="row">
+           <div class="container">
 
-        </div>
-    </section>
+               <h3 class="gotham-title yellow" title="Ready">Ready</h3>
+               <h3 class="gotham-title blue" title="Ready">Ready</h3>
+               <h3 class="gotham-title pink" title="Ready">Ready</h3>
+
+
+
+               <ul class="accordion" data-accordion role="tablist">
+                  <li class="accordion-navigation">
+                    <a href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">
+
+                        <span class="accordion__title">
+                            <span class="accordion__symbol-shape">
+                                <span class="accordion__symbol-plus">+</span>
+                                <span class="accordion__symbol-minus">-</span>
+                            </span>Accordion 1</span>
+                    </a>
+                    <div id="panel1d" class="content active" role="tabpanel" aria-labelledby="panel1d-heading">
+                      Panel 1. Lorem ipsum dolor
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a href="#panel2d"  role="tab" id="panel2d-heading" aria-controls="panel2d">
+
+                        <span class="accordion__title">Accordion 2</span>
+                    </a>
+                    <div id="panel2d" class="content" role="tabpanel" aria-labelledby="panel2d-heading">
+                      Panel 2. Lorem ipsum dolor
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a href="#panel3d" role="tab" id="panel3d-heading" aria-controls="panel3d">
+
+                        <span class="accordion__title">Accordion 3</span>
+                    </a>
+                    <div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading">
+                      Panel 3. Lorem ipsum dolor
+                    </div>
+                  </li>
+                </ul>
+           </div>
+       </section>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

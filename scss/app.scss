@@ -3,7 +3,7 @@
 
 // Or selectively include components
 @import
-  // "foundation/components/accordion",
+  "foundation/components/accordion",
   // "foundation/components/alert-boxes",
   "foundation/components/block-grid",
   // "foundation/components/breadcrumbs",
@@ -41,13 +41,14 @@
 
 // BASE
 
+@import "base/mixin";
 @import "base/base-style";
 @import "base/utility-classes";
 @import "base/normalize";
 @import "base/titles";
-@import "base/mixin";
 @import "base/fonts";
 @import "base/clock-animation";
+@import "base/accordion-symbol";
 
 
 // LAYOUT

@@ -1,0 +1,45 @@
+
+// Accordion symbol
+
+.accordion__symbol-shape {
+    background-color: rgba(56,207,204,0.2);
+    border-radius: 50%;
+    width: rem-calc(60);
+    height: rem-calc(60);
+    position: relative;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: rgba(56,207,204,0.2);
+        border-radius: 50%;
+        width: rem-calc(40);
+        height: rem-calc(40);
+        z-index: 10;
+        top: rem-calc(10);
+        left: rem-calc(10);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.accordion__symbol {
+    &-plus,
+    &-minus {
+        font-size: rem-calc(47);
+        font-weight: lighter;
+        position: absolute;
+        z-index: 30;
+        bottom: 0%;
+        left: 26%;
+    }
+
+    &-minus {
+        display: none;
+    }
+}

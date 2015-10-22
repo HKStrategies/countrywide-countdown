@@ -59,3 +59,45 @@
         }
     }
 }
+
+.gotham-title {
+    @include detroit-08;
+    @include detroit-title;
+
+    position: relative;
+    text-align: center;
+
+    &:before {
+        @include detroit-07;
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.yellow {
+        color: #FFFF99;
+
+        &:before {
+            color: #FFF800;
+        }
+    }
+
+    &.blue {
+        color: #3CD9EC;
+
+        &:before {
+            color: #009EBC;
+        }
+    }
+
+    &.pink {
+        color: #E70087;
+
+        &:before {
+            color: #923180;
+        }
+    }
+}

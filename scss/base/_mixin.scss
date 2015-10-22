@@ -10,3 +10,17 @@
     position: absolute;
     width: 1px;
 }
+
+@mixin detroit-title {
+    font-size: rem-calc(84);
+}
+
+@mixin detroit-08 {
+    font-family: detroit_08_prism_topregular;
+    line-height: normal;
+}
+
+@mixin detroit-07 {
+    font-family: detroit_07_prism_rightregular;
+    line-height: normal;
+}
