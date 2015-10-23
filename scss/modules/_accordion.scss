@@ -17,6 +17,7 @@
             font-size: rem-calc(13);
             font-family: 'Gotham-Book',Helvetica,Arial,sans-serif;
             letter-spacing: rem-calc(1);
+            min-height: rem-calc(75);
 
             @include accordion-tab-bg;
 
@@ -26,6 +27,7 @@
             }
 
             @media #{$medium} {
+                font-size: rem-calc(19);
                 cursor: pointer;
                 padding: rem-calc(40 100 40 160);
             }

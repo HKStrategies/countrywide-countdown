@@ -3,10 +3,56 @@
     background: #232430 url(../images/agent-lineup-v1-small.jpg) no-repeat;
     background-size: contain;
     background-position: bottom;
+    position: relative;
 
     .hero__logo {
-        margin: rem-calc(30 0 120 0);
+        margin: rem-calc(30 0 100 0);
         width: rem-calc(220);
         display: inline-block;
+    }
+
+    .gotham-title {
+        margin-bottom: rem-calc(0);
+        font-size: rem-calc(55);
+    }
+
+    @media #{$medium} {
+        height: rem-calc(680);
+        background-size: contain;
+
+        .hero__logo {
+            margin: rem-calc(30 0 0);
+        }
+
+        .hero__title {
+            margin-top: rem-calc(200);
+        }
+
+        .gotham-title {
+            margin-bottom: rem-calc(0);
+            font-size: rem-calc(140);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .hero__title {
+            margin-top: rem-calc(320);
+        }
+
+        .gotham-title {
+            font-size: rem-calc(100);
+        }
+    }
+
+    @media #{$xlarge} {
+        height: rem-calc(1100);
+
+        .hero__title {
+            margin-top: rem-calc(600);
+        }
+        .gotham-title {
+            margin-bottom: rem-calc(0);
+            font-size: rem-calc(140);
+        }
     }
 }

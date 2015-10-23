@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5, h6 {
     .faq & {
         margin-bottom: rem-calc(60);
     }
+
+    @media #{$medium} {
+        font-size: rem-calc(18);
+        letter-spacing: rem-calc(5);
+    }
 }
 
 .jumbo-text {

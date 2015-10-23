@@ -11,19 +11,28 @@
     .button {
         margin: rem-calc(100 0 120 0);
     }
+
+    @media #{$medium} {
+        height: rem-calc(900);
+    }
 }
 
 .accept-mission {
-    width: 100%;
     display: block;
     position: relative;
-
     background:  url(../images/agent-blowfeld-sml.png) no-repeat;
 
-    background-size: 130px;
-    background-position: bottom -80px;
-    background-position-y: 620px;
+    background-size: rem-calc(130);
+    background-position-y: rem-calc(520);
     background-position-x: right;
+    .row {
+        background:  url(../images/agent-blowfeld-sml.png) no-repeat;
+
+        background-size: rem-calc(130);
+        background-position-y: rem-calc(520);
+        background-position-x: right;
+    }
+
 
     &:after {
         content: "";
@@ -38,4 +47,55 @@
         position: absolute;
         z-index: -1;
     }
+
+    @media screen and (min-width: 480px) {
+        .row {
+            background-size: rem-calc(180);
+            background-position-y: rem-calc(320);
+            background-position-x: right;
+        }
+
+        background: none;
+    }
+
+    // Special ipad case
+    @media #{$medium} {
+        background: none;
+        
+        .row {
+            background-size: rem-calc(350);
+            background-position-y: rem-calc(400);
+            background-position-x: rem-calc(510);
+        }
+
+        .mission__container {
+            @include grid-column(
+                $columns: 8,
+                $center: true
+            );
+        }
+    }
+
+    @media #{$large} {
+        background: none;
+
+        .row {
+            background-size: rem-calc(400);
+            background-position-y: rem-calc(290);
+            background-position-x: rem-calc(610);
+        }
+
+        .mission__container {
+            @include grid-column(
+                $columns: 8,
+                $center: true
+            );
+        }
+
+        &:after {
+            background-size: rem-calc(900);
+        }
+    }
+
+
 }

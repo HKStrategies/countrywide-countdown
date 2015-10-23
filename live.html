@@ -7,34 +7,33 @@
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
+  <body class="competition-content">
       <header class="header__container">
           <div class="row">
               <div class="header__title">
                   <h1 class="header__title-dashed">Countrywide presents</h1>
               </div>
               <ul class="header__links">
-                  <li><a href="#" title="">VIDEO</a></li>
-                  <li><a href="#" title="">F.A.Q.'s</a></li>
+                  <li class="header__link-left"><a href="#video" title="">VIDEO</a></li>
+                  <li class="header__link-right"><a href="#faqs" title="">F.A.Q.'s</a></li>
               </ul>
           </div>
        </header>
        <section class="hero">
            <div class="row">
-               <div class="columns">
-                   <span class="hero__logo">
-                       <img src="images/Agents_of_Change_logo.svg"  alt="Agents of change" />
-                   </span>
-                   <h3 class="gotham-title yellow" title="Ready">Ready</h3>
+               <span class="hero__logo">
+                   <img src="images/Agents_of_Change_logo.svg"  alt="Agents of change" />
+               </span>
+               <div class="hero__title">
+                   <h3 class="gotham-title yellow" title="Are you">Are you</h3>
+                   <h3 class="gotham-title yellow" title="Ready?">Ready?</h3>
                </div>
            </div>
        </section>
-       <section class="video">
-           <div class="row">
-                <div class="flex-video widescreen vimeo">
-                    <iframe src="http://player.vimeo.com/video/35485079" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                </div>
-           </div>
+       <section class="video" id="video">
+            <div class="flex-video widescreen vimeo">
+                <iframe src="http://player.vimeo.com/video/35485079" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
        </section>
        <section class="time background-solid">
            <div class="row">
@@ -45,9 +44,8 @@
                    <span class="strap-text">Now is the time</span>
                    <h3 class="gotham-title yellow" title="Time">Time</h3>
                    <div class="time__container">
-                       <p class="jumbo-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                           <br><br>
-                           Your just a few short questions away...</p>
+                       <p class="jumbo-text">The wait is over; our mission has gone into launch mode. You have 2 weeks to register for the Agents of Change programme. If selected you will be part of a team to change the image and culture of the property industry forever. We value all our employees and need you to help us grow, we need our agents to share our values and be responsible for spreading the word on our mission.
+                           </p>
                    </div>
                </div>
            </div>
@@ -55,11 +53,9 @@
        <section class="accept-mission background-solid">
            <div class="row">
                <div class="columns">
-                   <h3 class="gotham-title pink" title="Lorem">Lorem</h3>
+                   <!-- <h3 class="gotham-title pink" title="Lorem">Lorem</h3> -->
                    <div class="mission__container">
-                       <p class="jumbo-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                           <br><br>
-                           Your just a few short questions away...</p>
+                       <p class="jumbo-text">To find out if you’ve got what it takes to become an Agent of Change we’ve designed a short quiz for you complete. Our high tech data crunching systems will quickly analyze your results. To register you are required to fill in your agent contact credentials. Successful agents will be notified by the 18th November. Good Luck!</p>
                            <a href="#" class="button mission">Accept Mission</a>
                    </div>
                </div>
@@ -68,70 +64,87 @@
        <section class="faq background-solid">
            <div class="row">
                <div class="columns">
-                   <h3 class="gotham-title blue" title="FAQS">FAQS</h3>
+                   <h3 class="gotham-title blue" title="FAQS" id="faqs">FAQS</h3>
                    <span class="strap-text">About the agents of change</span>
                    <ul class="accordion" data-accordion role="tablist">
                       <li class="accordion-navigation">
-                        <a href="#panel1d" class="accordion__symbol" role="tab" id="panel1d-heading" aria-controls="panel1d">LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                        <a href="#panel1d" class="accordion__symbol" role="tab" id="panel1d-heading" aria-controls="panel1d">
+                            So what is Agents of Change?
                         </a>
                         <div id="panel1d" class="content" role="tabpanel" aria-labelledby="panel1d-heading">
-                          Panel 1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          We know how great it is to work in the property industry but our public perception does us no favours. Countrywide are launching a company wide initiative to challenge these perceptions and change our industry forever. We’re looking for a team of agents from across our business to lead this mission. The programme is open to all employees, not just management.
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel2d" class="accordion__symbol" role="tab" id="panel2d-heading" aria-controls="panel2d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            Will I be responsible for a certain number of Agents?
                         </a>
                         <div id="panel2d" class="content" role="tabpanel" aria-labelledby="panel2d-heading">
-                          Panel 2. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          You are asked to support the Change Agents in your team as described above.
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel3d" class="accordion__symbol" role="tab" id="panel3d-heading" aria-controls="panel3d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            How do I get selected to be an Agent of Change?
                         </a>
                         <div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading">
-                          Panel 3. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          You need to apply on the dedicated Agents of Change microsite and your application will then be reviewed by the leadership team and the internal communications and engagement team. We’re looking for people who are enthusiastic and want to help make Countrywide a great place to work, so bear that in mind when applying!
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel4d" class="accordion__symbol" role="tab" id="panel4d-heading" aria-controls="panel4d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            How much time will being an Agent of Change take up?
                         </a>
                         <div id="panel4d" class="content" role="tabpanel" aria-labelledby="panel4d-heading">
-                          Panel 4. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          The training day will consist of an overnight stay the night before the day and then a full day out of the office. After that, we anticipate that you will spend up to 1 hour a day on your mission. Your manager will support you in the time you need and you will receive a new mission every quarter.
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel5d" class="accordion__symbol" role="tab" id="panel5d-heading" aria-controls="panel5d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            Is this just an opportunity for management level or is it open to anyone?
                         </a>
                         <div id="panel5d" class="content" role="tabpanel" aria-labelledby="panel5d-heading">
-                          Panel 5. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          We all have a part to play in making Countrywide a great place to work so Agents of Change is open to everyone! It most definitely is not just for management – we want people at all levels and with a wide range of experience and expertise to join the mission and become our Agents of Change.
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel6d" class="accordion__symbol" role="tab" id="panel6d-heading" aria-controls="panel6d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            Do I have to apply?
                         </a>
                         <div id="panel6d" class="content" role="tabpanel" aria-labelledby="panel6d-heading">
-                          Panel 6. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          You don’t have to apply but if you want to make a difference to life at Countrywide and help us share best practice so we all really start living the values then why wouldn’t you?!
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel7d" class="accordion__symbol" role="tab" id="panel7d-heading" aria-controls="panel7d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            If I am a successful applicant when do I become an Agent of Change?
                         </a>
                         <div id="panel7d" class="content" role="tabpanel" aria-labelledby="panel7d-heading">
-                          Panel 7. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          We’ll be recruiting Change Agents between 28<sup>th</sup> October and 11<sup>th</sup> November. All applicants will be emailed on or around 18th November to let them know whether or not they have been successful.
                         </div>
                       </li>
                       <li class="accordion-navigation">
                         <a href="#panel8d" class="accordion__symbol" role="tab" id="panel8d-heading" aria-controls="panel8d">
-                            LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.
+                            Will I be rewarded for being an Agent of Change?
                         </a>
                         <div id="panel8d" class="content" role="tabpanel" aria-labelledby="panel8d-heading">
-                          Panel 8. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          There won’t be a reward as such, but you will get the credibility that comes with being a Change Agent and the recognition that you’re striving to help bring us all together as One Countrywide. You’ll also develop your skillset at the training day, so it really is a great opportunity to learn and help shape change at Countrywide.
+                        </div>
+                      </li>
+                      <li class="accordion-navigation">
+                        <a href="#panel9d" class="accordion__symbol" role="tab" id="panel9d-heading" aria-controls="panel9d">
+                            What happens to possible commissions and targets I may miss as a result of being an Agent of Change?
+                        </a>
+                        <div id="panel9d" class="content" role="tabpanel" aria-labelledby="panel9d-heading">
+                          Being a Change Agent is voluntary and you will have the full support of your manager to enable you to carry out your mission without it affecting your core role.
+                        </div>
+                      </li>
+                      <li class="accordion-navigation">
+                        <a href="#panel10d" class="accordion__symbol" role="tab" id="panel10d-heading" aria-controls="panel10d">
+                            Do I get gadgets, like James Bond?
+                        </a>
+                        <div id="panel10d" class="content" role="tabpanel" aria-labelledby="panel10d-heading">
+                          While we’d love to act like Q and give you loads of cool gadgets, all we can offer is the credibility that comes with being an Agent of Change.
                         </div>
                       </li>
                     </ul>

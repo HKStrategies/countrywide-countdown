@@ -71,3 +71,44 @@ header {
         }
     }
 }
+
+// Top navigation module
+
+.header__links {
+    font-size: rem-calc(12);
+    font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+    margin: rem-calc(30) auto;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: rem-calc(0 10);
+    }
+
+    a {
+        color: #ffffff;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    @media #{$medium} {
+        margin: -15px 0 0;
+
+        .header__link-left,
+        .header__link-right {
+            @include grid-column(
+                $columns: 6,
+                $center: false
+            );
+
+            margin: 0;
+            text-align: right;
+
+            &:first-of-type {
+                text-align: left;
+            }
+        }
+    }
+}

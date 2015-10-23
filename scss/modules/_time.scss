@@ -1,6 +1,6 @@
 .time {
     text-align: center;
-    padding-bottom: rem-calc(60);
+    padding-bottom: rem-calc(30);
 
     .time__logo {
         margin: rem-calc(60 0 120 0);
@@ -17,6 +17,25 @@
             width: rem-calc(270);
             height: rem-calc(1);
             background: #ffffff;
+        }
+    }
+
+    @media #{$medium} {
+        .time__container {
+            @include grid-column(
+                $columns: 8,
+                $center: true
+            );
+        }
+
+        .time__logo {
+            margin: rem-calc(60 0 200 0);
+
+            &:after {
+                top: rem-calc(180);
+                left: rem-calc(-145);
+                width: rem-calc(500);
+            }
         }
     }
 }

@@ -3,7 +3,7 @@
 .button {
     &.mission {
         text-transform: uppercase;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: rem-calc(10);
         letter-spacing: rem-calc(1);
         padding: rem-calc(20);
@@ -38,6 +38,33 @@
             content: '';
             display: block;
             position: absolute;
+        }
+    }
+
+    @media #{$medium} {
+        &.mission {
+            font-size: rem-calc(14);
+            letter-spacing: rem-calc(6);
+            padding: rem-calc(45 35);
+            border: rem-calc(30) solid rgba(0,62,74,0.7);
+            font-weight: lighter;
+            &:before {
+                border-radius: 24% / 50%;
+            }
+            &:after {
+                background-size: 650px;
+                background-position: 0 0;
+                width: 650px;
+                height: 215px;
+                left: -197px;
+                right: -100px;
+                top: -50px;
+            }
+
+            &:hover,
+            &:focus {
+                background: #3CD9EC;
+            }
         }
     }
 }

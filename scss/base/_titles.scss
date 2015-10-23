@@ -41,3 +41,14 @@
         }
     }
 }
+
+@media #{$medium} {
+    .hero,
+    .time,
+    .accept-mission,
+    .faq {
+        .gotham-title {
+            font-size: rem-calc(170);
+        }
+    }
+}

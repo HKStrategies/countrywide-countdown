@@ -1,13 +1,16 @@
 body {
-    background-color: #484B53;
+    background-color: #000000;
     color: #ffffff;
     min-width: 370px;
+
+    &.competition-content {
+        background-color: #484B53;
+    }
 }
 
 header,
 section {
     margin: 0;
-    background: #484B53;
 }
 
 // Background Gradient
