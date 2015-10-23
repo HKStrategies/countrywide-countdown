@@ -18,9 +18,17 @@
 @mixin detroit-08 {
     font-family: detroit_08_prism_topregular;
     line-height: normal;
+    letter-spacing: rem-calc(20);
 }
 
 @mixin detroit-07 {
     font-family: detroit_07_prism_rightregular;
     line-height: normal;
+    letter-spacing: rem-calc(20);
+}
+
+@mixin accordion-tab-bg {
+    background: none;
+    color: #ffffff;
+    outline: none;
 }

@@ -1,45 +1,31 @@
 
 // Accordion symbol
 
-.accordion__symbol-shape {
-    background-color: rgba(56,207,204,0.2);
-    border-radius: 50%;
-    width: rem-calc(60);
-    height: rem-calc(60);
+.accordion__symbol {
     position: relative;
-    display: inline-block;
-
     &:before {
         content: '';
+        background: url(../images/accordion/plus.svg) no-repeat;
         display: block;
         position: absolute;
-        background-color: rgba(56,207,204,0.2);
-        border-radius: 50%;
+        top: rem-calc(18);
+        left: rem-calc(20);
         width: rem-calc(40);
         height: rem-calc(40);
-        z-index: 10;
-        top: rem-calc(10);
-        left: rem-calc(10);
     }
 
-    &:hover,
-    &:focus {
-        cursor: pointer;
-    }
-}
-
-.accordion__symbol {
-    &-plus,
-    &-minus {
-        font-size: rem-calc(47);
-        font-weight: lighter;
-        position: absolute;
-        z-index: 30;
-        bottom: 0%;
-        left: 26%;
+    .active & {
+        &:before {
+            background: url(../images/accordion/minus.svg) no-repeat;
+        }
     }
 
-    &-minus {
-        display: none;
+    @media #{$medium} {
+        &:before {
+            top: rem-calc(30);
+            left: rem-calc(60);
+            width: rem-calc(70);
+            height: rem-calc(70);
+        }
     }
 }

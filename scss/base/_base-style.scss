@@ -1,15 +1,14 @@
 body {
     background-color: #000000;
     color: #ffffff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    text-transform: uppercase
+    min-width: 370px;
 }
 
 // Background Gradient
 .countdown-page {
     background: linear-gradient(to bottom, rgba(72, 75, 83,0), rgba(72, 75, 83,0.7));
-    min-width: 370px;
+}
+
+.background-solid {
+    background: #484B53;
 }

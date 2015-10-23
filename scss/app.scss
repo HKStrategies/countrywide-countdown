@@ -49,11 +49,15 @@
 @import "base/fonts";
 @import "base/clock-animation";
 @import "base/accordion-symbol";
+@import "base/text";
 
+// COMPONENTS
+@import "components/buttons";
 
-// LAYOUT
+// MODULES
 @import "modules/top-nav-bar";
 @import "modules/clock";
 @import "modules/countdown-content";
-
-// MODULES
+@import "modules/accordion";
+@import "modules/mission";
+@import "modules/faq";

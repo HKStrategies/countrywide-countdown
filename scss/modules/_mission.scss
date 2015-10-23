@@ -1,0 +1,41 @@
+// Mission
+
+.mission__container {
+    text-align: center;
+
+    @include grid-column(
+        $columns: 12,
+        $center: true
+    );
+
+    .button {
+        margin: rem-calc(100 0 120 0);
+    }
+}
+
+.accept-mission {
+    width: 100%;
+    display: block;
+    position: relative;
+
+    background: url(../images/agent-blowfeld-sml.png) no-repeat;
+
+    background-size: 130px;
+    background-position: bottom -80px;
+    background-position-y: 620px;
+    background-position-x: right;
+
+    &:after {
+        content: "";
+        background: url(../images/city-background.png) repeat-x;
+        background-size: rem-calc(500);
+        background-position: bottom;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
