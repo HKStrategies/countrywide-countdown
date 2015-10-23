@@ -1,0 +1,12 @@
+.hero {
+    text-align: center;
+    background: #232430 url(../images/agent-lineup-v1-small.jpg) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    .hero__logo {
+        margin: rem-calc(30 0 120 0);
+        width: rem-calc(220);
+        display: inline-block;
+    }
+}

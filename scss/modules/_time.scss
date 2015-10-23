@@ -1,0 +1,22 @@
+.time {
+    text-align: center;
+    padding-bottom: rem-calc(60);
+
+    .time__logo {
+        margin: rem-calc(60 0 120 0);
+        width: rem-calc(220);
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: rem-calc(180);
+            left: rem-calc(-25);
+            width: rem-calc(270);
+            height: rem-calc(1);
+            background: #ffffff;
+        }
+    }
+}

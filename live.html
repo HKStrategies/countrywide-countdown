@@ -7,37 +7,52 @@
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body class="background-solid">
-      <header>
-          <!-- <div class="header__welcome-user">
-              HI USERNAME
-          </div> -->
-          <div class="header__title">
-              <h1 class="header__title-dashed">Countrywide presents</h1>
-          </div>
-          <!-- <div class="header__links">
-              <ul>
+  <body>
+      <header class="header__container">
+          <div class="row">
+              <div class="header__title">
+                  <h1 class="header__title-dashed">Countrywide presents</h1>
+              </div>
+              <ul class="header__links">
                   <li><a href="#" title="">VIDEO</a></li>
                   <li><a href="#" title="">F.A.Q.'s</a></li>
               </ul>
-          </div> -->
+          </div>
        </header>
-       <section>
+       <section class="hero">
            <div class="row">
                <div class="columns">
-
+                   <span class="hero__logo">
+                       <img src="images/Agents_of_Change_logo.svg"  alt="Agents of change" />
+                   </span>
                    <h3 class="gotham-title yellow" title="Ready">Ready</h3>
-                   <h3 class="gotham-title blue" title="Ready">Ready</h3>
-                   <h3 class="gotham-title pink" title="Ready">Ready</h3>
-
-                   <!-- <span class="accordion__symbol-shape">
-                       <span class="accordion__symbol-plus">+</span>
-                       <span class="accordion__symbol-minus">-</span>
-                   </span> -->
                </div>
            </div>
        </section>
-       <section class="accept-mission">
+       <section class="video">
+           <div class="row">
+                <div class="flex-video widescreen vimeo">
+                    <iframe src="http://player.vimeo.com/video/35485079" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+           </div>
+       </section>
+       <section class="time background-solid">
+           <div class="row">
+               <div class="columns">
+                   <span class="time__logo">
+                       <img src="images/Agents_of_Change_logo.svg"  alt="Agents of change" />
+                   </span>
+                   <span class="strap-text">Now is the time</span>
+                   <h3 class="gotham-title yellow" title="Time">Time</h3>
+                   <div class="time__container">
+                       <p class="jumbo-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                           <br><br>
+                           Your just a few short questions away...</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <section class="accept-mission background-solid">
            <div class="row">
                <div class="columns">
                    <h3 class="gotham-title pink" title="Lorem">Lorem</h3>
@@ -46,15 +61,11 @@
                            <br><br>
                            Your just a few short questions away...</p>
                            <a href="#" class="button mission">Accept Mission</a>
-                       <!-- <span class="accordion__symbol-shape">
-                           <span class="accordion__symbol-plus">+</span>
-                           <span class="accordion__symbol-minus">-</span>
-                       </span> -->
                    </div>
                </div>
            </div>
        </section>
-       <section class="faq">
+       <section class="faq background-solid">
            <div class="row">
                <div class="columns">
                    <h3 class="gotham-title blue" title="FAQS">FAQS</h3>

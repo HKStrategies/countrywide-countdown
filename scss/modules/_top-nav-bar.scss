@@ -1,20 +1,14 @@
-// Header
-header {
-    margin-top: rem-calc(30);
-    font-size: rem-calc(10);
-    letter-spacing: rem-calc(2);
-}
+// Top navigation module
 
 .header__links {
-    ul {
-        font-size: rem-calc(10);
-        margin: 0;
-        line-height: normal;
-    }
+    font-size: rem-calc(12);
+    font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+    margin: rem-calc(30) auto;
+    text-align: center;
 
     li {
         display: inline-block;
-        margin-left: rem-calc(10);
+        margin: rem-calc(0 10);
     }
 
     a {
