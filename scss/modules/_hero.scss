@@ -17,8 +17,17 @@
     }
 
     @media #{$medium} {
-        height: rem-calc(680);
-        background-size: contain;
+        height: rem-calc(720);
+        background: none;
+
+        &:after {
+            position: fixed;
+            background-size: cover;
+            background: #232430 url(../images/agent-lineup-v1-small.jpg) no-repeat;
+            background-position: bottom;
+            position: relative;
+            z-index: -1;
+        }
 
         .hero__logo {
             margin: rem-calc(30 0 0);

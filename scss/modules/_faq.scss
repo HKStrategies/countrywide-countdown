@@ -1,7 +1,9 @@
 .faq {
     padding-top: rem-calc(100);
+    padding-bottom: rem-calc(60);
 
     @media #{$medium} {
         padding-top: rem-calc(60);
+        padding-bottom: rem-calc(100);
     }
 }
