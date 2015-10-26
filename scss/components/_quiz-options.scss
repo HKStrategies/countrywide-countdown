@@ -1,0 +1,53 @@
+// Quiz button
+
+.quiz__options {
+    list-style: none;
+    font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+
+    @media #{$medium} {
+        padding-left: rem-calc(60);
+        margin-bottom: rem-calc(60);
+    }
+
+    li {
+        @include grid-column(
+            $columns: 10,
+            $center: true
+        );
+
+        // padding: 5%;
+        padding: rem-calc(20);
+        border-radius: 7% / 15%;
+        font-size: rem-calc(18);
+        border: rem-calc(1) solid #ffffff;
+        background: #003e4a;
+        margin: rem-calc(20) auto rem-calc(40);
+
+        &:hover,
+        &:focus {
+            background-color: #3CD9EC;
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        @media #{$medium} {
+            @include grid-column(
+                $columns: 5,
+                $center: false
+            );
+
+            min-height: rem-calc(200);
+            font-size: rem-calc(22);
+            margin: rem-calc(20);
+            display: inline-table;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+}

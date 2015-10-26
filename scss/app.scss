@@ -53,6 +53,8 @@
 
 // COMPONENTS
 @import "components/buttons";
+@import "components/quiz-number";
+@import "components/quiz-options";
 
 // MODULES
 @import "modules/clock";
@@ -63,3 +65,4 @@
 @import "modules/faq";
 @import "modules/time";
 @import "modules/hero";
+@import "modules/quiz";

@@ -9,6 +9,10 @@ header {
     background: #232430;
     margin-top: 0;
     padding-top: rem-calc(30);
+
+    .quiz-content & {
+        background: #484B53;
+    }
 }
 
 .header__title {

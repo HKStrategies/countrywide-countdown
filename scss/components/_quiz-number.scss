@@ -1,0 +1,64 @@
+// Quiz number
+.quiz__number-container {
+    @include grid-column(
+        $columns: 12,
+        $center: true
+    );
+
+    .quiz__number-shape {
+        display: inline-block;
+        width: rem-calc(120);
+        height: rem-calc(120);
+        background: rgba(0,62,74,1);
+        border: rem-calc(1) solid rgba(255,255,255,1);
+        border-radius: 50%;
+
+        .quiz__number {
+            position: relative;
+            width: rem-calc(40);
+            height: rem-calc(80);
+            font-size: rem-calc(80);
+            margin: rem-calc(17) auto;
+        }
+
+        .prism_top,
+        .prism_right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: normal;
+            font-weight: normal;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .prism_top {
+            font-family: "detroit_08_prism_topregular",Helvetica,Arial,sans-serif;
+            color: #E70087;
+        }
+
+        .prism_right {
+            font-family: "detroit_07_prism_rightregular",Helvetica,Arial,sans-serif;
+            color: #923180;
+        }
+
+    }
+
+    .quiz-status-text {
+        font-size: rem-calc(18);
+        font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
+        margin: rem-calc(20 0);
+        display: block;
+    }
+}
+
+.quiz-lead {
+    letter-spacing: rem-calc(5);
+
+    @media #{$medium} {
+        @include grid-column(
+            $columns: 7,
+            $center: true
+        );
+    }
+}
