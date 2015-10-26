@@ -9,8 +9,8 @@
         display: inline-block;
         width: rem-calc(120);
         height: rem-calc(120);
-        background: rgba(0,62,74,1);
-        border: rem-calc(1) solid rgba(255,255,255,1);
+        background: $dark-blue;
+        border: rem-calc(1) solid $white-border;
         border-radius: 50%;
 
         .quiz__number {
@@ -34,12 +34,12 @@
 
         .prism_top {
             font-family: "detroit_08_prism_topregular",Helvetica,Arial,sans-serif;
-            color: #E70087;
+            color: $purple-top;
         }
 
         .prism_right {
             font-family: "detroit_07_prism_rightregular",Helvetica,Arial,sans-serif;
-            color: #923180;
+            color: $purple-side;
         }
 
     }
@@ -54,6 +54,7 @@
 
 .quiz-lead {
     letter-spacing: rem-calc(5);
+    text-transform: uppercase;
 
     @media #{$medium} {
         @include grid-column(

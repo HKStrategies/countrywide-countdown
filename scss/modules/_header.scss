@@ -11,7 +11,7 @@ header {
     padding-top: rem-calc(30);
 
     .quiz-content & {
-        background: #484B53;
+        background: $dark-gray;
     }
 }
 
@@ -31,7 +31,7 @@ header {
         &:before,
         &:after {
             content: " ";
-            border-top: rem-calc(1) solid #ffffff;
+            border-top: rem-calc(1) solid $white;
             width: rem-calc(60);
             display: inline-block;
             margin: rem-calc(3 10);
@@ -60,7 +60,7 @@ header {
             &:before,
             &:after {
                 content: " ";
-                border-top: rem-calc(1) solid #ffffff;
+                border-top: rem-calc(1) solid $white;
                 width: rem-calc(140);
                 display: inline-block;
                 margin: rem-calc(3 10);
@@ -90,7 +90,7 @@ header {
     }
 
     a {
-        color: #ffffff;
+        color: $white;
 
         &:hover, &:focus {
             text-decoration: underline;

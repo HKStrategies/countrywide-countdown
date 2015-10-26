@@ -18,26 +18,26 @@
     }
 
     &.yellow {
-        color: #FFFF99;
+        color: $yellow-top;
 
         &:before {
-            color: #FFF800;
+            color: $yellow-side;
         }
     }
 
     &.blue {
-        color: #3CD9EC;
+        color: $blue-top;
 
         &:before {
-            color: #009EBC;
+            color: $blue-Side;
         }
     }
 
     &.pink {
-        color: #E70087;
+        color: $purple-top;
 
         &:before {
-            color: #923180;
+            color: $purple-side;
         }
     }
 }

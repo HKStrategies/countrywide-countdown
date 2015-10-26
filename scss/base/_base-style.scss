@@ -1,10 +1,10 @@
 body {
     background-color: #000000;
-    color: #ffffff;
+    color: $white;
     min-width: 370px;
 
     &.competition-content {
-        background-color: #484B53;
+        background-color: $dark-gray;
     }
 }
 
@@ -19,5 +19,5 @@ section {
 }
 
 .background-solid {
-    background: #484B53;
+    background: $dark-gray;
 }
