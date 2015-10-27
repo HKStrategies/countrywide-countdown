@@ -25,14 +25,9 @@ $(document).ready(function(){
 		$('#Organisation').append('<option>' + sElement['Name'] + '</option>');
 	});
 
-
 	$('#Region').empty(); // empty the drop down (if necessarry)
 		$.each(region[0],function(iIndex, sElement) {
 		$('#Region').append('<option>' + sElement['Name'] + '</option>');
 	});
 
-	// Enable parallax on desktop
-	if (Modernizr.mq('only screen and (min-width: 650px)')) {
-	    $('.hero').parallax({imageSrc: '/images/agent-lineup-v1-small.jpg'});
-	}
 });
