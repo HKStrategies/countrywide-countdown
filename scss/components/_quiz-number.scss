@@ -51,15 +51,3 @@
         display: block;
     }
 }
-
-.quiz-lead {
-    letter-spacing: rem-calc(5);
-    text-transform: uppercase;
-
-    @media #{$medium} {
-        @include grid-column(
-            $columns: 7,
-            $center: true
-        );
-    }
-}

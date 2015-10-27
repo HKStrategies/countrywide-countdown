@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COUNTRYWIDE PRESENTS</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body class="quiz-content">
+      <header class="header__container">
+          <div class="row">
+              <div class="header__title">
+                  <h1 class="header__title-dashed">Countrywide presents</h1>
+              </div>
+          </div>
+       </header>
+       <section class="form background__gradient">
+           <div class="row">
+               <div class="columns">
+                   <div class="form__logo">
+                       <img src="images/Agents_of_Change_logo.svg"  alt="Agents of change" />
+                   </div>
+                   <h3 class="gotham-title pink" title="Well done">Well done</h3>
+
+
+                   <form>
+                      <fieldset>
+                        <legend class="form-lead">Fill in this short form for the<br> chance to become an agent of change</legend>
+
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <input type="text" placeholder="First name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <input type="text" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <input type="text" placeholder="Role">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <input type="text" placeholder="Line manager">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <input type="text" placeholder="Line manager">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <select>
+                                  <option value="husker">Husker</option>
+                                  <option value="starbuck">Starbuck</option>
+                                  <option value="hotdog">Hot Dog</option>
+                                  <option value="apollo">Apollo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns"><label>
+                                <select>
+                                  <option value="husker">Husker</option>
+                                  <option value="starbuck">Starbuck</option>
+                                  <option value="hotdog">Hot Dog</option>
+                                  <option value="apollo">Apollo</option>
+                              </select></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <textarea rows="4" placeholder="Tell us in 50 words why you should be an Agent of Change"></textarea>
+                            </div>
+                        </div>
+                      </fieldset>
+                      <br>
+                      <!-- Coman delimited CSV -->
+                      <input type="hidden" id="csvStream" name="csvStream" value="<?php echo $var; ?>" />
+                      <input type="submit" value="Submit">
+                    </form>
+               </div>
+           </div>
+       </section>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
