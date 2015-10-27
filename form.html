@@ -26,7 +26,10 @@
 
                    <form>
                       <fieldset>
-                        <legend class="form-lead">Fill in this short form for the<br> chance to become an agent of change</legend>
+                        <legend class="form-lead">
+                            {{Result}}
+                            <!--Fill in this short form for the<br> chance to become an agent of change-->
+                        </legend>
 
                         <div class="row">
                             <div class="small-12 columns">
@@ -78,9 +81,8 @@
                         </div>
                         <br>
                         <!-- Common delimited CSV -->
-                        <input type="hidden" id="csvStream" name="csv
-                        Stream" value="<?php echo $var; ?>" />
-
+                        <input type="hidden" name="cvs" value="{{CVS}}">
+                        <input type="hidden" id="csvStream" name="csvStream" value="<?php echo $var; ?>" />
                         <div class="form__submit-bg">
                             <span class="form__button-border">
                                 <input type="submit" value="Submit" class="form__submit button primary">

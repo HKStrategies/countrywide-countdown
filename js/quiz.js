@@ -10,10 +10,17 @@ $(function () {
 
         $('.quiz__options').hide().eq(0).show();
         $('.quiz-lead').hide().eq(0).show();
-        $(document).on('click', '.quiz__options li', function () {
-            var answer = $(this).closest('.quiz__options').find('li').index($(this));
-            _next(answer);
-        });
+        if (Modernizr.mq('only screen and (min-width: 650px)')) {
+            $(document).on('click', '.quiz__options li', function () {
+                var answer = $(this).closest('.quiz__options').find('li').index($(this));
+                _next(answer);
+            });
+        } else {
+            $(document).on('touch', '.quiz__options li', function () {
+                var answer = $(this).closest('.quiz__options').find('li').index($(this));
+                _next(answer);
+            });
+        }
     }
 
 
