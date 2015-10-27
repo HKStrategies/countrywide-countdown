@@ -5,16 +5,32 @@
     text-align: center;
     font-family: "Gotham-Book",Helvetica,Arial,sans-serif;
     padding-bottom: rem-calc(100);
+    position: relative;
+
     &.background__gradient {
         /* can be treated like a fallback */
         background-color: $dark-gray;
 
         /* will be "on top", if browser supports it */
-        background-image: linear-gradient(to top, rgba(72, 75, 83,0), rgba(72, 75, 83,1)); /* Standard syntax (must be last) */
+        background-image: linear-gradient(to top, rgba(72, 75, 83,0), rgba(72, 75, 83,0.9), rgba(72, 75, 83,1)); /* Standard syntax (must be last) */
 
         /* these will reset other properties, like background-position, but it does know what you mean */
         background: $dark-gray;
-        background: linear-gradient(to top, rgba(72, 75, 83,0), rgba(72, 75, 83,1)); /* Standard syntax (must be last) */
+        background: linear-gradient(to top, rgba(72, 75, 83,0), rgba(72, 75, 83,0.9), rgba(72, 75, 83,1)); /* Standard syntax (must be last) */
+    }
+
+    &:after {
+        content: "";
+        background: url(../images/city-background.png) repeat-x;
+        background-size: rem-calc(1000);
+        background-position: bottom;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 
     fieldset {
@@ -24,13 +40,21 @@
     input,
     select,
     textarea {
-        font-size: rem-calc(24);
+        font-size: rem-calc(14);
         margin: rem-calc(14);
-        padding: rem-calc(5);
         @include grid-column(
-            $columns: 8,
+            $columns: 12,
             $center: true
         );
+
+        @media #{$medium} {
+            font-size: rem-calc(18);
+
+            @include grid-column(
+                $columns: 8,
+                $center: true
+            );
+        }
     }
 }
 
@@ -45,6 +69,7 @@
 .form-lead {
     letter-spacing: rem-calc(5);
     text-transform: uppercase;
+    margin-bottom: rem-calc(40);
 
 
     @media #{$medium} {
@@ -52,5 +77,20 @@
             $columns: 8,
             $center: true
         );
+    }
+}
+
+.form__submit-bg {
+    width: rem-calc(300);
+    height: rem-calc(240);
+    background: url(../images/button-surround.svg) -35px 1px no-repeat;
+    background-size: rem-calc(370);
+    display: inline-block;
+
+    @media #{$medium} {
+        width: rem-calc(600);
+        height: rem-calc(340);
+        background-size: rem-calc(620);
+        background: url(../images/button-surround.svg) -1px 1px no-repeat;
     }
 }

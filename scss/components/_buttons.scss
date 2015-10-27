@@ -1,7 +1,7 @@
 // Button style
 
 .button {
-    &.mission {
+    &.primary {
         text-transform: uppercase;
         font-weight: normal;
         font-size: rem-calc(10);
@@ -39,10 +39,18 @@
             display: block;
             position: absolute;
         }
+
+        &.form__submit {
+            max-width: rem-calc(180);
+
+            @media #{$medium} {
+                max-width: rem-calc(300);
+            }
+        }
     }
 
     @media #{$medium} {
-        &.mission {
+        &.primary {
             font-size: rem-calc(14);
             letter-spacing: rem-calc(6);
             padding: rem-calc(45 35);
