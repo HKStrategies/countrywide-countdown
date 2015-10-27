@@ -10,13 +10,14 @@ $(function () {
 
         $('.quiz__options').hide().eq(0).show();
         $('.quiz-lead').hide().eq(0).show();
-        if (Modernizr.mq('only screen and (min-width: 650px)')) {
-            $(document).on('click', '.quiz__options li', function () {
+
+        if (Modernizr.touch) {
+            $(document).on('touchend', '.quiz__options li', function () {
                 var answer = $(this).closest('.quiz__options').find('li').index($(this));
                 _next(answer);
             });
         } else {
-            $(document).on('touch', '.quiz__options li', function () {
+            $(document).on('click', '.quiz__options li', function () {
                 var answer = $(this).closest('.quiz__options').find('li').index($(this));
                 _next(answer);
             });
@@ -43,10 +44,11 @@ $(function () {
 
         var responseJSON = JSON.stringify(answersArr);
         var escapedResponses = escapeHtml(responseJSON);
-        $('<form action="results.php" method="POST"></form>')
-            .append('<input type="submit">')
-            .append('<input name="responses" value="' + escapedResponses + '">')
-            .trigger('submit');
+        var $form = $('<form action="results.php" method="POST"></form>').appendTo('body');
+        $form
+        .append('<input type="submit">')
+        .append('<input name="responses" value="' + escapedResponses + '">')
+        .trigger('submit');
     }
 
 

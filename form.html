@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>COUNTRYWIDE PRESENTS</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -24,7 +25,7 @@
                    <h3 class="gotham-title pink" title="Well done">Well done</h3>
 
 
-                   <form>
+                   <form method="post" action="http://134.213.31.172:9999/form">
                       <fieldset>
                         <legend class="form-lead">
                             {{Result}}
@@ -33,56 +34,55 @@
 
                         <div class="row">
                             <div class="small-12 columns">
-                                <input type="text" placeholder="First name">
+                                <input type="text" id="FirstName" name="FirstName" placeholder="First name" required="required">
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <input type="text" placeholder="Last name">
+                                <input type="text" id="LastName" name="LastName" placeholder="Last name" required="required">
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <input type="text" placeholder="Email">
+                                <input type="text" id="Email" name="Email" placeholder="Email" required="required">
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <input type="text" placeholder="Role">
+                                <input type="text" id="Role" name="Role" placeholder="Role">
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <input type="text" placeholder="Line manager">
+                                <input type="text" id="LineManager" name="LineManager" placeholder="Line manager">
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <select id="Organisation">
+                                <select id="Organisation" name="Organisation" required="required">
                                 </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <select id="Region">
+                                <select id="Region" name="Region" required="required">
                                 </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <textarea rows="4" placeholder="Tell us in 50 words why you should be an Agent of Change"></textarea>
+                                <textarea rows="4" placeholder="Tell us in 50 words why you should be an Agent of Change" required="required"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form__availability">
-                                <input id="Availability" type="checkbox">
+                                <input id="Availability" name="Availability" type="checkbox" required="required">
                                 <label for="Availability">*Are you available on the 1st December?</label>
                             </div>
                         </div>
                         <br>
                         <!-- Common delimited CSV -->
-                        <input type="hidden" name="cvs" value="{{CVS}}">
-                        <input type="hidden" id="csvStream" name="csvStream" value="<?php echo $var; ?>" />
+                        <input type="hidden" name="csv" value="{{CSV}}">
                         <div class="form__submit-bg">
                             <span class="form__button-border">
                                 <input type="submit" value="Submit" class="form__submit button primary">

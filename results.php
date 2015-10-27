@@ -32,23 +32,20 @@
         }
     }
 
-    //Create Cvs
-    $cvs = "";
+    //Create CSV
+    $csv = "";
     foreach ($responseArr as $q) {
-        $cvs .= implode($col_delimiter, $q) . $row_delimiter;
+        $csv .= implode($col_delimiter, $q) . $row_delimiter;
     }
 
-    mkdir("cvs", 0700);
-    $filename = "cvs/cvs_" . time() . ".txt";
-    $cvs_file_name = fopen($filename, "w");
-    fwrite($cvs_file_name, $cvs);
-    fclose($cvs_file_name);
+    mkdir("csv", 0700);
+    $filename = "csv/csv_" . time() . ".txt";
+    $csv_file_name = fopen($filename, "w");
+    fwrite($csv_file_name, $csv);
+    fclose($csv_file_name);
 
 
     //Import Form HTML
     $form = file_get_contents("form.html");
     $form = str_replace("{{Result}}", $result, $form);
-    echo str_replace("{{CVS}}", $filename, $form);
-
-
-
+    echo str_replace("{{CSV}}", $filename, $form);
