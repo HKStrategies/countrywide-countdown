@@ -55,22 +55,14 @@
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <select>
-                                  <option value="husker">Husker</option>
-                                  <option value="starbuck">Starbuck</option>
-                                  <option value="hotdog">Hot Dog</option>
-                                  <option value="apollo">Apollo</option>
+                                <select id="Organisation">
                                 </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="small-12 columns"><label>
-                                <select>
-                                  <option value="husker">Husker</option>
-                                  <option value="starbuck">Starbuck</option>
-                                  <option value="hotdog">Hot Dog</option>
-                                  <option value="apollo">Apollo</option>
-                              </select></label>
+                            <div class="small-12 columns">
+                                <select id="Region">
+                                </select>
                             </div>
                         </div>
                         <div class="row">
@@ -78,17 +70,23 @@
                                 <textarea rows="4" placeholder="Tell us in 50 words why you should be an Agent of Change"></textarea>
                             </div>
                         </div>
-                      </fieldset>
-                      <br>
-                      <!-- Common delimited CSV -->
-                      <input type="hidden" id="csvStream" name="csv
-                      Stream" value="<?php echo $var; ?>" />
+                        <div class="row">
+                            <div class="form__availability">
+                                <input id="Availability" type="checkbox">
+                                <label for="Availability">*Are you available on the 1st December?</label>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Common delimited CSV -->
+                        <input type="hidden" id="csvStream" name="csv
+                        Stream" value="<?php echo $var; ?>" />
 
-                      <div class="form__submit-bg">
-                          <span class="form__button-border">
-                              <input type="submit" value="Submit" class="form__submit button primary">
-                          </span>
-                      </div>
+                        <div class="form__submit-bg">
+                            <span class="form__button-border">
+                                <input type="submit" value="Submit" class="form__submit button primary">
+                            </span>
+                        </div>
+                      </fieldset>
                     </form>
                </div>
            </div>

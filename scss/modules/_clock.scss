@@ -48,6 +48,18 @@
     background: #006e85;
     background: linear-gradient(to right, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
 
+    .clock__alert & {
+        /* can be treated like a fallback */
+        background-color: #006e85;
+
+        /* will be "on top", if browser supports it */
+        background-image: linear-gradient(to right, rgba(231,0,135,0), rgba(231,0,135,0.2)); /* Standard syntax (must be last) */
+
+        /* these will reset other properties, like background-position, but it does know what you mean */
+        background: #006e85;
+        background: linear-gradient(to right, rgba(231,0,135,0), rgba(231,0,135,0.2)); /* Standard syntax (must be last) */
+    }
+
     @media #{$medium} {
         width: rem-calc(700);
         height: rem-calc(700);
@@ -55,15 +67,6 @@
         margin: 10px auto;
         position: relative;
 
-        /* can be treated like a fallback */
-        background-color: #006e85;
-
-        /* will be "on top", if browser supports it */
-        background-image: linear-gradient(to right, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
-
-        /* these will reset other properties, like background-position, but it does know what you mean */
-        background: #006e85;
-        background: linear-gradient(to right, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
         filter: alpha(opacity=20)\9;
     }
 }
@@ -87,6 +90,19 @@
     background: #007f99;
     background: linear-gradient(to top, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
 
+    .clock__alert & {
+        /* can be treated like a fallback */
+        background-color: #007f99;
+
+        /* will be "on top", if browser supports it */
+        background-image: linear-gradient(to top, rgba(231,0,135,0), rgba(231,0,135,0.2)); /* Standard syntax (must be last) */
+
+        /* these will reset other properties, like background-position, but it does know what you mean */
+        background: #007f99;
+        background: linear-gradient(to top, rgba(231,0,135,0), rgba(231,0,135,0.2)); /* Standard syntax (must be last) */
+
+    }
+
     @media #{$medium} {
         width: rem-calc(580);
         height: rem-calc(580);
@@ -96,15 +112,6 @@
         left: rem-calc(60);
         z-index: 10;
 
-        /* can be treated like a fallback */
-        background-color: #007f99;
-
-        /* will be "on top", if browser supports it */
-        background-image: linear-gradient(to top, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
-
-        /* these will reset other properties, like background-position, but it does know what you mean */
-        background: #007f99;
-        background: linear-gradient(to top, rgba(0,158,188,0), rgba(0,158,188,0.2)); /* Standard syntax (must be last) */
         filter: alpha(opacity=20)\9;
     }
 }
@@ -128,6 +135,19 @@
     background: #009ebc;
     background: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */
 
+    .clock__alert & {
+        /* can be treated like a fallback */
+        background-color: #009ebc;
+
+        /* will be "on top", if browser supports it */
+        background-image: linear-gradient(to bottom, rgba(231,0,135,0), rgba(231,0,135,0.2)); /* Standard syntax (must be last) */;
+
+        /* these will reset other properties, like background-position, but it does know what you mean */
+        background: #009ebc;
+        background: linear-gradient(to bottom, rgba(231,0,135,0), rgba(231,0,135,0.2)); /* Standard syntax (must be last) */
+
+    }
+
     @media #{$medium} {
         width: rem-calc(500);
         height: rem-calc(500);
@@ -137,15 +157,6 @@
         left: rem-calc(40);
         z-index: 20;
 
-        /* can be treated like a fallback */
-        background-color: #009ebc;
-
-        /* will be "on top", if browser supports it */
-        background-image: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */;
-
-        /* these will reset other properties, like background-position, but it does know what you mean */
-        background: #009ebc;
-        background: linear-gradient(to bottom, rgba(56,207,204,0), rgba(56,207,204,0.2)); /* Standard syntax (must be last) */
         filter: alpha(opacity=20)\9;
     }
 }

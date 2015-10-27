@@ -37,6 +37,31 @@
         border: none;
     }
 
+    .form__availability {
+        label {
+            color: $white;
+        }
+
+        input {
+            display: inline-block;
+            width: initial;
+        }
+
+        @include grid-column(
+            $columns: 12,
+            $center: true
+        );
+
+        @media #{$medium} {
+            font-size: rem-calc(18);
+
+            @include grid-column(
+                $columns: 8,
+                $center: true
+            );
+        }
+    }
+
     input,
     select,
     textarea {

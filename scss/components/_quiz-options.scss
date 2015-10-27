@@ -17,7 +17,7 @@
 
         // padding: 5%;
         padding: rem-calc(20);
-        border-radius: 7% / 15%;
+        border-radius: 5% / 15%;
         font-size: rem-calc(18);
         border: rem-calc(1) solid $white;
         background: #003e4a;
@@ -39,9 +39,9 @@
                 $center: false
             );
 
-            min-height: rem-calc(200);
+            min-height: rem-calc(120);
             font-size: rem-calc(22);
-            margin: rem-calc(20);
+            margin: rem-calc(15);
             display: inline-table;
 
             span {

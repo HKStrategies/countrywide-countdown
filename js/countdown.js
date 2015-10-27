@@ -6,7 +6,7 @@ $(function () {
 
     // var future = new Date("October 19 2015 11:50:00 GMT+0200");
     var url = "/live.html"; // ex: "/index.php" , "../" , "/"
-    var future = new Date("October 28 2015 16:00:00 GMT+0100");
+    var future = new Date("October 28 2015 16:00:00");
 
     var _countdown = function () {
 
@@ -32,7 +32,7 @@ $(function () {
 
         //"When the day reaches 00 and their is < 24 hrs to go, we add an alert CSS class"
         if (days < 1) {
-            $('.days').addClass("opacity_05");
+            $('.clock__container').addClass("clock__alert");
         }
 
         $(".seconds").html(seconds + "<span>SECONDS<\/span>");
