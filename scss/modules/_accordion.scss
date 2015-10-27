@@ -41,6 +41,7 @@
 
         .content {
             padding: rem-calc(10 10 30 25);
+            font-family: 'Gotham-Book',Helvetica,Arial,sans-serif;
 
             &.active {
                 @include accordion-tab-bg;
