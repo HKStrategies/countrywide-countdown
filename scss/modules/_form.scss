@@ -125,5 +125,10 @@
         height: rem-calc(340);
         background-size: rem-calc(620);
         background: url(../images/button-surround.svg) -1px 1px no-repeat;
+
+        // IE9 hack!
+        @media screen and (min-width:0\0) {
+            background-position: 1px -73px ;
+        }
     }
 }
