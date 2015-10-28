@@ -5,8 +5,8 @@
             'options'   => array(
                 array('opt' => 'Spend the day in bed watching Spooks', 'point' => 0),
                 array('opt' => 'Reading the newspaper?', 'point' => 1),
-                array('opt' => 'Cycling blindfolded down Ben Nevis?', 'point' => 2),
-                array('opt' => 'Volunteering at the local Youth Club?', 'point' => 3),
+                array('opt' => 'Cycling blindfolded down Ben Nevis', 'point' => 2),
+                array('opt' => 'Volunteering at the local Youth Club', 'point' => 3),
             ),
             'rationale' => array(
                 array('opt' => 'Slack'),
@@ -19,10 +19,10 @@
         'q_2' => array(
             'question'  => 'Your planning a holiday, what is your trip of choice?',
             'options'   => array(
-                array('opt' => 'Lying on the beach for the week?', 'point' => 0),
+                array('opt' => 'Lying on the beach for the week', 'point' => 0),
                 array('opt' => 'Exploring the long lost cities of China? ', 'point' => 2),
-                array('opt' => 'Snowboarding in the Rockies?', 'point' => 2),
-                array('opt' => 'Building a school in Burma?', 'point' => 2),
+                array('opt' => 'Snowboarding in the Rockies', 'point' => 2),
+                array('opt' => 'Building a school in Burma', 'point' => 2),
             ),
             'rationale' => array(
                 array('opt' => 'Slack'),
@@ -50,13 +50,13 @@
             'question'  => 'If you could be a character in history who would you be?',
             'options'   => array(
                 array('opt' => 'William the Conquerer', 'point' => 0),
-                array('opt' => 'Elizabeth !', 'point' => 3),
+                array('opt' => 'Elizabeth I', 'point' => 3),
                 array('opt' => 'John Lennon', 'point' => 1),
                 array('opt' => 'Alexander Fleming', 'point' => 2),
             ),
             'rationale' => array(
                 array('opt' => 'Conquer and rule'),
-                array('opt' => 'Visionary/Selfless/Putting your team (country) first.'),
+                array('opt' => 'Visionary/Selfless/Putting your team (country) first'),
                 array('opt' => 'Musican but not far reaching'),
                 array('opt' => 'Dedicated life to medicine'),
             ),
@@ -65,7 +65,7 @@
             'question'  => 'Which Countrywide value most represents you?',
             'options'   => array(
                 array('opt' => 'Responsible', 'point' => 1),
-                array('opt' => 'Personable', 'point' => 1),
+                array('opt' => 'Personal', 'point' => 1),
                 array('opt' => 'Straightforward', 'point' => 1),
                 array('opt' => 'Passionate', 'point' => 1),
             ),
@@ -79,10 +79,10 @@
         'q_6' => array(
             'question'  => 'When faced with a challenge what do you do?',
             'options'   => array(
-                array('opt' => 'Hide in the corner and hope someone else can deal with it?', 'point' => 0),
-                array('opt' => 'Come up with a solution on your own.', 'point' => 1),
+                array('opt' => 'Hide in the corner and hope someone else can deal with it', 'point' => 0),
+                array('opt' => 'Come up with a solution on your own', 'point' => 1),
                 array('opt' => 'Rally the troops - more heads are better than one', 'point' => 3),
-                array('opt' => 'Take immediate action?', 'point' => 2),
+                array('opt' => 'Take immediate action', 'point' => 2),
             ),
             'rationale' => array(
                 array('opt' => 'Shys away from responsibility'),
@@ -109,8 +109,8 @@
         'q_8' => array(
             'question'  => 'You\'ve been set a task with a tight deadline. What do you do first?    ',
             'options'   => array(
-                array('opt' => 'Go for lunch - you need to eat first.', 'point' => 0),
-                array('opt' => 'Write a list of what needs to be done and then assign tasks.', 'point' => 3),
+                array('opt' => 'Go for lunch - you need to eat first', 'point' => 0),
+                array('opt' => 'Write a list of what needs to be done and then assign tasks', 'point' => 3),
                 array('opt' => 'Delegate workload to your team', 'point' => 2),
                 array('opt' => 'Get out of the office and go for a walk - ARGGGHHHH', 'point' => 0),
             ),
