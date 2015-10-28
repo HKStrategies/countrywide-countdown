@@ -7,6 +7,14 @@
     padding-bottom: rem-calc(100);
     position: relative;
 
+    .gotham-title {
+        font-size: rem-calc(28);
+
+        @media #{$medium} {
+            font-size: rem-calc(108);
+        }
+    }
+
     &.background__gradient {
         /* can be treated like a fallback */
         background-color: $dark-gray;
