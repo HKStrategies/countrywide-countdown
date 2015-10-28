@@ -10,10 +10,26 @@
 
     .button {
         margin: rem-calc(100 0 120 0);
+
+        .faq & {
+            margin: 0;
+        }
     }
 
     @media #{$medium} {
         height: rem-calc(900);
+
+        .button {
+            margin: rem-calc(100 0 120 0);
+        }
+
+        .faq & {
+            height: rem-calc(200);
+
+            .button {
+                margin: rem-calc(100 0 120 0);
+            }
+        }
     }
 }
 
@@ -61,7 +77,7 @@
     // Special ipad case
     @media #{$medium} {
         background: none;
-        
+
         .row {
             background-size: rem-calc(350);
             background-position-y: rem-calc(400);

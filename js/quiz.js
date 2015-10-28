@@ -1,5 +1,6 @@
 $(function () {
 
+    var fadeDuration = 700;
     var currentQuestion = 1;
     var answersArr = {};
     var totalQuestions = $('.quiz__options').length;
@@ -30,13 +31,13 @@ $(function () {
 
         currentQuestion++;
 
-        if (currentQuestion - 1 == totalQuestions) {
+        if (currentQuestion - 1 >= totalQuestions) {
             _finished();
             return true;
         }
 
-        $('.quiz__options').hide().eq(currentQuestion - 1).show();
-        $('.quiz-lead').hide().eq(currentQuestion - 1).show();
+        $('.quiz__options').hide().eq(currentQuestion - 1).fadeIn(fadeDuration);
+        $('.quiz-lead').hide().eq(currentQuestion - 1).fadeIn(fadeDuration);
         $('.prism_top , .prism_right').html(currentQuestion);
     }
 

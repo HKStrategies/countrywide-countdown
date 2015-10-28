@@ -17,7 +17,7 @@
 
         ),
         'q_2' => array(
-            'question'  => 'Your planning a holiday, what is your trip of choice?',
+            'question'  => 'You\'re planning a holiday, what is your trip of choice?',
             'options'   => array(
                 array('opt' => 'Lying on the beach for the week', 'point' => 0),
                 array('opt' => 'Exploring the long lost cities of China? ', 'point' => 2),

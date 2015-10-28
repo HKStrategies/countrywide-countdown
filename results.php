@@ -28,7 +28,7 @@
     foreach ($conf['results'] as $key => $val) {
         $scoreKey = explode("-", $key);
         if (intval($scoreKey[0]) <= $totalPoints && intval($scoreKey[1]) >= $totalPoints) {
-            $result = "Score:" . $totalPoints . "<br>" . $val;
+            $result = $val;
         }
     }
 
@@ -48,4 +48,5 @@
     //Import Form HTML
     $form = file_get_contents("form.html");
     $form = str_replace("{{Result}}", $result, $form);
+    $form = str_replace("{{TOTAL_SCORE}}", $totalPoints, $form);
     echo str_replace("{{CSV}}", $filename, $form);

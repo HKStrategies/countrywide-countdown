@@ -73,7 +73,7 @@
                         </div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <textarea id="Reason" name="Reason" rows="4" placeholder="Tell us in 50 words or less why you should be an Agent of Change" required="required"></textarea>
+                                <textarea id="Reason" name="Reason" rows="4" placeholder="Tell us why you want to be an agent of change" required="required"></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -84,12 +84,13 @@
                         <div class="row">
                             <div class="form__availability">
                                 <input id="Availability" name="Availability" type="checkbox" required="required">
-                                <label for="Availability">*Are you available on the 1st December?</label>
+                                <label for="Availability">*Are you available on the 1st December for a mandatory AOC Training Event?</label>
                             </div>
                         </div>
                         <br>
                         <!-- Common delimited CSV -->
                         <input type="hidden" name="csv" value="{{CSV}}">
+                        <input type="hidden" id="Score" name="Score" value="{{TOTAL_SCORE}}">
                         <div class="form__submit-bg">
                             <span class="form__button-border">
                                 <input type="submit" value="Submit" class="form__submit button primary">
